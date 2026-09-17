@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
 import { FiArrowRight } from 'react-icons/fi'
-import service1 from '../../../public/service-1.avif'
-import service2 from '../../../public/service-2.avif'
-import service3 from '../../../public/service-3.avif'
-import service4 from '../../../public/service-4.avif'
+import service1 from '../../../public/images/service-1.avif'
+import service2 from '../../../public/images/service-2.avif'
+import service3 from '../../../public/images/service-3.avif'
+import service4 from '../../../public/images/service-4.avif'
 
 export default function HomeServicesSection() {
   const treatments = [

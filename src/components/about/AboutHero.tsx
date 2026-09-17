@@ -1,5 +1,5 @@
 import BlurText from '../common/BlurText'
-import aboutHeroImg from '../../../public/abouthero.jpg'
+import aboutHeroImg from '../../../public/images/abouthero.jpg'
 
 export default function AboutHero() {
   return (

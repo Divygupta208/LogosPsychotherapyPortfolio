@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { FiArrowRight, FiCalendar } from 'react-icons/fi'
 import BlurText from '../common/BlurText'
-import servicesHeroImg from '../../../public/serviceshero.jpg'
+import servicesHeroImg from '../../../public/images/serviceshero.jpg'
 
 export default function ServicesHero() {
   return (

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { FiMail, FiCheck } from 'react-icons/fi'
-import waveBg from '../../../public/wavebg.png'
+import waveBg from '../../../public/images/wavebg.png'
 
 export default function BottomCTA() {
   const [email, setEmail] = useState('')

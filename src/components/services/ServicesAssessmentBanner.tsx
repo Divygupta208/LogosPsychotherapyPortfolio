@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { FiArrowRight } from 'react-icons/fi'
-import waveBg from '../../../public/wavebg.png'
+import waveBg from '../../../public/images/wavebg.png'
 
 export default function ServicesAssessmentBanner() {
   return (

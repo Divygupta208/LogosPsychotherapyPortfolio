@@ -1,5 +1,5 @@
 import BlurText from '../common/BlurText'
-import contactHeroImg from '../../../public/contacthero.jpg'
+import contactHeroImg from '../../../public/images/contacthero.jpg'
 
 export default function ContactHero() {
   return (

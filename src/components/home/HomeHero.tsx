@@ -4,7 +4,7 @@ import { FiArrowRight, FiCalendar, FiShield, FiHeart, FiCheckCircle } from 'reac
 import { RiScalesLine } from 'react-icons/ri'
 
 import BlurText from '../common/BlurText'
-import homeHeroImg from '../../../public/homehero.jpg'
+import homeHeroImg from '../../../public/images/homehero.jpg'
 
 export default function HomeHero() {
     // Animation Variants - Blurry Reveal Effect

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { HiMenu, HiX } from 'react-icons/hi'
 import { FiCalendar } from 'react-icons/fi'
-import logo from "../../../public/logo.png";
+import logo from "../../../public/images/logo.png";
 
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)

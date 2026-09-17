@@ -1,4 +1,4 @@
-import waveBg from '../../../public/wavebg.png'
+import waveBg from '../../../public/images/wavebg.png'
 
 export default function HomeWellnessJourneyStats() {
   return (

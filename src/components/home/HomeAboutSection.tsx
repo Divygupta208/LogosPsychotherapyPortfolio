@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { FiArrowRight, FiCheckCircle } from 'react-icons/fi'
-import clientImg from '../../../public/client-image.png'
+import clientImg from '../../../public/images/client-image.png'
 
 export default function HomeAboutSection() {
   return (

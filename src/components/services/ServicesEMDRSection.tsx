@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { FiArrowRight, FiShield, FiHeart, FiFeather, FiUsers, FiInfo } from 'react-icons/fi'
-import sandBg from '../../../public/sandbg.png'
+import sandBg from '../../../public/images/sandbg.png'
 
 export default function ServicesEMDRSection() {
   const emdrSpecialties = [

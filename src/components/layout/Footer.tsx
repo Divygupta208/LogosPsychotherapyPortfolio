@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { FaWhatsapp, FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa'
 import { FiArrowUp, FiMail, FiPhone, FiMapPin } from 'react-icons/fi'
-import logo from '../../../public/logo.png'
+import logo from '../../../public/images/logo.png'
 
 export default function Footer() {
     const scrollToTop = () => {
