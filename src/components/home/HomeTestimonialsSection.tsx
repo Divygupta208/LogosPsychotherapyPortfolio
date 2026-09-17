@@ -10,21 +10,18 @@ export default function HomeTestimonialsSection() {
         'Logos Psychotherapy has transformed my life. I feel more balanced, confident, and at peace than I ever have before. The support is truly life-changing.',
       name: 'Priya Sharma',
       role: 'Client',
-      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop',
     },
     {
       quote:
         'The ocean-like calm and patient-focused approach helped me process anxiety that I had carried for years. I am deeply grateful for this healing space.',
       name: 'Aarav Mehta',
       role: 'Client',
-      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop',
     },
     {
       quote:
         'Warm, clinical, and extraordinarily empathetic. The personalized therapy sessions gave me clear practical tools for my everyday life.',
       name: 'Ananya Roy',
       role: 'Client',
-      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop',
     },
   ]
 
@@ -71,11 +68,14 @@ export default function HomeTestimonialsSection() {
               
               {/* CLIENT INFO */}
               <div className="flex items-center gap-3.5">
-                <img
-                  src={current.avatar}
-                  alt={current.name}
-                  className="w-12 h-12 rounded-full object-cover border-2 border-primary-light"
-                />
+                {/* NAME INITIALS AVATAR FALLBACK */}
+                <div className="w-12 h-12 rounded-full bg-primary-light text-primary-dark font-bold text-sm flex items-center justify-center border-2 border-white shadow-sm shrink-0 uppercase tracking-wider">
+                  {current.name
+                    .split(' ')
+                    .map((n) => n[0])
+                    .join('')}
+                </div>
+
                 <div>
                   <h4 className="text-base font-bold text-text-dark leading-tight">
                     {current.name}

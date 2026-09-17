@@ -1,10 +1,12 @@
+import waveBg from '../../../public/images/wavebg.png'
+
 export default function HomeWellnessJourneyStats() {
   return (
     <section className="relative w-full py-20 sm:py-28 my-0 bg-bg-main min-h-[320px] flex items-center justify-center overflow-hidden">
       {/* BACKGROUND WAVE IMAGE (STRETCHED FULL WIDTH) */}
       <div className="absolute inset-0 w-full h-full pointer-events-none">
         <img
-          src="/wavebg.png"
+          src={waveBg}
           alt="Ocean Wave Background"
           className="w-full h-full object-fill mix-blend-multiply"
         />
