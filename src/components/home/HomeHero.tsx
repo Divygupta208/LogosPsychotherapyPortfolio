@@ -4,6 +4,7 @@ import { FiArrowRight, FiCalendar, FiShield, FiHeart, FiCheckCircle } from 'reac
 import { RiScalesLine } from 'react-icons/ri'
 
 import BlurText from '../common/BlurText'
+import homeHeroImg from '../../../public/homehero.jpg'
 
 export default function HomeHero() {
     // Animation Variants - Blurry Reveal Effect
@@ -50,16 +51,16 @@ export default function HomeHero() {
 
     return (
         <section className="relative min-h-screen w-full flex items-center justify-center pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden bg-bg-main">
-            {/* BACKGROUND AERIAL TOP-VIEW OCEAN & SAND IMAGE (SAND ON LEFT) */}
-            <div className="absolute inset-0 pointer-events-none">
-                {/* Aerial Top View Ocean & Sand - Flipped Horizontally (scaleX(-1)) */}
-                <div
-                    className="absolute inset-0 opacity-95 bg-cover bg-center transition-all duration-700 scale-x-[-1]"
-                    style={{
-                        backgroundImage: `url('https://images.unsplash.com/photo-1505118380757-91f5f5632de0?q=80&w=2052&auto=format&fit=crop')`,
-                    }}
+            {/* BACKGROUND AERIAL TOP-VIEW OCEAN & SAND IMAGE */}
+            <div className="absolute inset-0 pointer-events-none overflow-hidden">
+                <img
+                    src={homeHeroImg}
+                    alt="Home Hero Background"
+                    fetchPriority="high"
+                    loading="eager"
+                    decoding="async"
+                    className="w-full h-full object-cover object-center transition-all duration-700 scale-x-[-1]"
                 />
-
                 {/* Subtle light balance overlay for crystal clear image visibility */}
                 <div className="absolute inset-0 bg-gradient-to-b from-bg-main/35 via-transparent to-bg-main/45" />
             </div>
@@ -73,7 +74,7 @@ export default function HomeHero() {
                         variants={containerVariants}
                         initial="hidden"
                         animate="visible"
-                        className="lg:col-span-7 flex flex-col items-start text-left space-y-6"
+                        className="lg:col-span-7 flex flex-col items-center text-center lg:items-start lg:text-left space-y-6 mx-auto lg:mx-0"
                     >
                         {/* THERAPY BADGE */}
                         <motion.div variants={blurItemVariants}>
@@ -109,7 +110,7 @@ export default function HomeHero() {
                         {/* KEY HIGHLIGHT TAGS */}
                         <motion.div
                             variants={blurItemVariants}
-                            className="flex flex-wrap items-center gap-y-2 gap-x-6 pt-1 text-sm text-text-dark/80 font-medium"
+                            className="flex flex-wrap items-center justify-center lg:justify-start gap-y-2 gap-x-6 pt-1 text-sm text-text-dark/80 font-medium"
                         >
                             <div className="flex items-center gap-2">
                                 <FiCheckCircle className="w-4 h-4 text-cta" />
@@ -128,7 +129,7 @@ export default function HomeHero() {
                         {/* CALL TO ACTION BUTTONS */}
                         <motion.div
                             variants={blurItemVariants}
-                            className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4 w-full sm:w-auto"
+                            className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-4 pt-4 w-full sm:w-auto"
                         >
                             <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
                                 <Link
@@ -152,12 +153,12 @@ export default function HomeHero() {
                         </motion.div>
                     </motion.div>
 
-                    {/* RIGHT COLUMN: VISUAL COMPOSITION WITH GLASS CARDS & WAVE ILLUSTRATION */}
+                    {/* RIGHT COLUMN: VISUAL COMPOSITION WITH GLASS CARDS & WAVE ILLUSTRATION (DESKTOP ONLY) */}
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 1, delay: 0.3 }}
-                        className="lg:col-span-5 relative flex items-center justify-center"
+                        className="hidden lg:flex lg:col-span-5 relative items-center justify-center"
                     >
                         {/* CENTRAL OCEAN EMBLEM CARD */}
                         <div className="relative w-full max-w-md aspect-[4/5] rounded-[2.5rem] overflow-hidden p-6 flex flex-col justify-between backdrop-blur-xl bg-gradient-to-b from-white/90 via-white/70 to-primary-light/40 border border-white/90 shadow-[0_20px_50px_rgba(47,111,134,0.12)]">

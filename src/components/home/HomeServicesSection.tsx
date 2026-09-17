@@ -1,27 +1,31 @@
 import { Link } from 'react-router-dom'
 import { FiArrowRight } from 'react-icons/fi'
+import service1 from '../../../public/service-1.avif'
+import service2 from '../../../public/service-2.avif'
+import service3 from '../../../public/service-3.avif'
+import service4 from '../../../public/service-4.avif'
 
 export default function HomeServicesSection() {
-  const services = [
+  const treatments = [
     {
-      title: 'Stress & Anxiety Support',
-      description: 'Find calm, reduce stress for your unique & manage emotions better.',
-      image: 'https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=2070&auto=format&fit=crop',
+      title: 'Trauma',
+      description: 'Process overwhelming experiences, release stored tension, and regain a deep sense of safety and wholeness.',
+      image: service1,
     },
     {
-      title: 'Emotional Wellness',
-      description: 'Strengthen self-awareness, build resilience, and nurture your emotional health.',
-      image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=2062&auto=format&fit=crop',
+      title: 'Anxiety & Depression',
+      description: 'Calm constant worry, ease emotional fatigue, and gradually restore inner balance, energy, and hope.',
+      image: service2,
     },
     {
-      title: 'Mindfulness & Meditation',
-      description: 'Cultivate inner peace, improve focus, and experience a greater sense of present.',
-      image: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=2070&auto=format&fit=crop',
+      title: 'Grief & Loss',
+      description: 'Process deep pain with compassion, honor what has been lost, and reconnect with meaning at your own pace.',
+      image: service3,
     },
     {
-      title: 'Couples & Family Support',
-      description: 'Strengthen connections, improve communication, and heal together.',
-      image: 'https://images.unsplash.com/photo-1516585427167-9f4af9627e6c?q=80&w=2080&auto=format&fit=crop',
+      title: 'Attachment Work & Relationships',
+      description: 'Calm relational alarm systems, build steadier grounding, and cultivate healthy, confident connections.',
+      image: service4,
     },
   ]
 
@@ -32,16 +36,16 @@ export default function HomeServicesSection() {
         {/* HEADER */}
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-text-dark">
-            <span className="text-cta">Popular</span> Services
+            <span className="text-cta">Specialized</span> Treatments
           </h2>
           <p className="text-muted-text text-base sm:text-lg font-medium">
-            Explore our most loved wellness programs.
+            Compassionate, evidence-based care tailored to your unique healing journey.
           </p>
         </div>
 
-        {/* 4 SERVICE CARDS GRID */}
+        {/* 4 TREATMENT CARDS GRID */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {services.map((item, idx) => (
+          {treatments.map((item, idx) => (
             <div
               key={idx}
               className="group flex flex-col justify-between p-4 rounded-3xl bg-white border border-border-neutral shadow-[0_4px_20px_rgba(47,111,134,0.04)] hover:shadow-[0_12px_35px_rgba(47,111,134,0.12)] hover:-translate-y-1 transition-all duration-300"
@@ -78,13 +82,13 @@ export default function HomeServicesSection() {
           ))}
         </div>
 
-        {/* BOTTOM ALL SERVICES BUTTON */}
+        {/* BOTTOM ALL TREATMENTS BUTTON */}
         <div className="flex justify-center">
           <Link
             to="/services"
             className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-cta hover:bg-primary-dark text-white font-semibold text-sm shadow-[0_6px_20px_rgba(58,142,166,0.3)] transition-all duration-300 active:scale-95"
           >
-            <span>View All Services</span>
+            <span>View All Treatments</span>
             <FiArrowRight className="w-4 h-4" />
           </Link>
         </div>

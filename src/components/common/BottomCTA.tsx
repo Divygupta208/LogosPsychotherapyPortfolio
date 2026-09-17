@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { FiMail, FiCheck } from 'react-icons/fi'
+import waveBg from '../../../public/wavebg.png'
 
 export default function BottomCTA() {
   const [email, setEmail] = useState('')
@@ -18,17 +19,18 @@ export default function BottomCTA() {
   const waveMask = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 360' preserveAspectRatio='none'%3E%3Cpath d='M0,0 L1440,0 L1440,290 C1200,340 960,240 720,290 C480,340 240,240 0,290 Z' fill='%23000'/%3E%3C/svg%3E")`
 
   return (
-    <section
-      style={{
-        maskImage: waveMask,
-        WebkitMaskImage: waveMask,
-        maskSize: '100% 100%',
-        WebkitMaskSize: '100% 100%',
-        maskRepeat: 'no-repeat',
-        WebkitMaskRepeat: 'no-repeat',
-      }}
-      className="relative w-full m-0 pt-20 sm:pt-28 lg:pt-32 pb-32 sm:pb-40 lg:pb-48 min-h-[540px] sm:min-h-[600px] md:min-h-[660px] lg:min-h-[700px] flex flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-bg-main via-bg-main to-[#EFE5D8]"
-    >
+    <div className="w-full bg-[#EFE5D8]">
+      <section
+        style={{
+          maskImage: waveMask,
+          WebkitMaskImage: waveMask,
+          maskSize: '100% 100%',
+          WebkitMaskSize: '100% 100%',
+          maskRepeat: 'no-repeat',
+          WebkitMaskRepeat: 'no-repeat',
+        }}
+        className="relative w-full m-0 pt-20 sm:pt-28 lg:pt-32 pb-32 sm:pb-40 lg:pb-48 min-h-[540px] sm:min-h-[600px] md:min-h-[660px] lg:min-h-[700px] flex flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-bg-main via-bg-main to-[#EFE5D8]"
+      >
 
       {/* BACKGROUND WAVE IMAGE WITH OPAQUE TOP & SAND BOTTOM */}
       <div className="absolute inset-0 w-full h-full pointer-events-none">
@@ -36,7 +38,7 @@ export default function BottomCTA() {
         <div className="absolute inset-x-0 top-0 h-44 sm:h-52 bg-bg-main z-0" />
 
         <img
-          src="/wavebg.png"
+          src={waveBg}
           alt="Ocean Wave Background"
           className="relative z-10 w-full h-full object-fill mix-blend-multiply"
         />
@@ -103,6 +105,7 @@ export default function BottomCTA() {
 
       </div>
     </section>
+    </div>
   )
 }
 
