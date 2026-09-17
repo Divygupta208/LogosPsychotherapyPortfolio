@@ -1,111 +1,144 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* ==========================================================================
+   VELARA INSPIRED COLOUR PALETTE - GLOBAL THEME
+   Calming. Modern. Trustworthy. Human-Centric.
+   ========================================================================== */
+
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  /* Global Typography */
+  --font-sans: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+  /* Primary Colours */
+  --color-primary: #5E9DB6;
+  --color-primary-dark: #2F6F86;
+  --color-primary-light: #D6EAF2;
+  --color-secondary: #A7C9D8;
+  --color-text-dark: #0F2D45;
 
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* Neutral Colours */
+  --color-bg-main: #F8FBFD;
+  --color-surface: #FFFFFF;
+  --color-border-neutral: #E6EEF3;
+  --color-muted-border: #C7D9E2;
+  --color-muted-text: #6B7C8A;
 
-  @media (max-width: 1024px) {
-    font-size: 16px;
-  }
-}
+  /* Accent Colours */
+  --color-accent: #7FB3C7;
+  --color-soft-accent: #A9D6E5;
+  --color-on-primary: #FFFFFF;
+  --color-cta: #3A8EA6;
+  --color-warm-accent: #F3C9A8;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
+  /* Semantic Colours */
+  --color-success: #4CAF50;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-info: #3B82F6;
 
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
-}
-
-#root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+  /* Gradients */
+  --ocean-gradient: linear-gradient(135deg, #5E9DB6 0%, #D6EAF2 100%);
+  --deep-ocean-gradient: linear-gradient(135deg, #2F6F86 0%, #5E9DB6 100%);
+  --soft-sky-gradient: linear-gradient(135deg, #D6EAF2 0%, #FFFFFF 100%);
 }
 
 body {
-  margin: 0;
+  font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
+/* ==========================================================================
+   TAILWIND CSS V4 THEME CONFIGURATION
+   ========================================================================== */
+@theme {
+  --font-sans: 'Quicksand', sans-serif;
+  --font-family-sans: 'Quicksand', sans-serif;
+  /* Primary Colours */
+  --color-primary: #5E9DB6;
+  --color-primary-dark: #2F6F86;
+  --color-primary-light: #D6EAF2;
+  --color-secondary: #A7C9D8;
+  --color-text-dark: #0F2D45;
+  --color-dark-text: #0F2D45;
+
+  /* Velara Primary Aliases */
+  --color-velara-primary: #5E9DB6;
+  --color-velara-primary-dark: #2F6F86;
+  --color-velara-primary-light: #D6EAF2;
+  --color-velara-secondary: #A7C9D8;
+  --color-velara-dark: #0F2D45;
+
+  /* Neutral Colours */
+  --color-bg-main: #F8FBFD;
+  --color-background-main: #F8FBFD;
+  --color-velara-bg: #F8FBFD;
+  --color-surface: #FFFFFF;
+  --color-border-neutral: #E6EEF3;
+  --color-muted-border: #C7D9E2;
+  --color-muted-text: #6B7C8A;
+  --color-text-muted: #6B7C8A;
+  --color-velara-border: #E6EEF3;
+  --color-velara-muted-border: #C7D9E2;
+  --color-velara-muted-text: #6B7C8A;
+
+  /* Accent Colours */
+  --color-accent: #7FB3C7;
+  --color-soft-accent: #A9D6E5;
+  --color-accent-soft: #A9D6E5;
+  --color-on-primary: #FFFFFF;
+  --color-cta: #3A8EA6;
+  --color-call-to-action: #3A8EA6;
+  --color-warm-accent: #F3C9A8;
+  --color-accent-warm: #F3C9A8;
+
+  /* Velara Accent Aliases */
+  --color-velara-accent: #7FB3C7;
+  --color-velara-soft-accent: #A9D6E5;
+  --color-velara-cta: #3A8EA6;
+  --color-velara-warm-accent: #F3C9A8;
+
+  /* Semantic Colours */
+  --color-success: #4CAF50;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-info: #3B82F6;
 }
 
-h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
-}
-h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
-}
-p {
-  margin: 0;
+/* ==========================================================================
+   GRADIENT UTILITY CLASSES
+   ========================================================================== */
+
+/* Background Gradients */
+.bg-ocean-gradient {
+  background-image: linear-gradient(135deg, #5E9DB6 0%, #D6EAF2 100%);
 }
 
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
+.bg-deep-ocean-gradient {
+  background-image: linear-gradient(135deg, #2F6F86 0%, #5E9DB6 100%);
 }
 
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
+.bg-soft-sky-gradient {
+  background-image: linear-gradient(135deg, #D6EAF2 0%, #FFFFFF 100%);
+}
+
+/* Text Gradients */
+.text-ocean-gradient {
+  background-image: linear-gradient(135deg, #5E9DB6 0%, #D6EAF2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-deep-ocean-gradient {
+  background-image: linear-gradient(135deg, #2F6F86 0%, #5E9DB6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-soft-sky-gradient {
+  background-image: linear-gradient(135deg, #D6EAF2 0%, #FFFFFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
