@@ -1,16 +1,25 @@
+import ContactHero from '../components/contact/ContactHero'
+import ContactFormSection from '../components/contact/ContactFormSection'
+import ContactFAQSection from '../components/contact/ContactFAQSection'
 import BottomCTA from '../components/common/BottomCTA'
+import SEO from '../components/common/SEO'
 
 export default function Contact() {
-  return (
-    <div className="w-full pt-28">
-      {/* Contact Page Content Placeholder */}
-      <section className="py-20 max-w-7xl mx-auto px-4 text-center bg-bg-main">
-        <h1 className="text-4xl font-extrabold text-text-dark mb-4">Contact & Book Consultation</h1>
-        <p className="text-muted-text text-lg max-w-2xl mx-auto">
-          Get in touch with us to schedule your first consultation or ask any questions.
-        </p>
-      </section>
-      <BottomCTA />
-    </div>
-  )
+    return (
+        <div className="w-full">
+            <SEO
+                title="Contact Us & Book Consultation | Logos Psychotherapy"
+                description="Get in touch with LOGOS Psychotherapy to schedule your confidential online consultation or ask any questions."
+                url="https://logospsychotherapy.com/contact"
+            />
+            <ContactHero />
+
+            <div className="w-full bg-bg-main">
+                <ContactFormSection />
+                <ContactFAQSection />
+            </div>
+
+            <BottomCTA />
+        </div>
+    )
 }
