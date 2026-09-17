@@ -246,12 +246,12 @@ export default function HomeHero() {
             {/* BOTTOM SEAMLESS ORGANIC OCEAN WAVE */}
             <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-none pointer-events-none">
                 <svg
-                    className="relative block w-full h-12 sm:h-20 text-white fill-current"
+                    className="relative block w-full h-12 sm:h-20"
                     viewBox="0 0 1200 120"
                     preserveAspectRatio="none"
                 >
                     <path d="M0,0 C150,90 350,-40 500,45 C650,130 900,10 1200,40 L1200,120 L0,120 Z" opacity="0.4" fill="var(--color-primary-light)" />
-                    <path d="M0,20 C200,80 450,10 700,65 C950,120 1100,20 1200,50 L1200,120 L0,120 Z" fill="#FFFFFF" />
+                    <path d="M0,20 C200,80 450,10 700,65 C950,120 1100,20 1200,50 L1200,120 L0,120 Z" fill="var(--color-bg-main)" />
                 </svg>
             </div>
         </section>

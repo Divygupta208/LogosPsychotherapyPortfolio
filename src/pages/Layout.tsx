@@ -4,12 +4,15 @@ import Footer from '../components/layout/Footer'
 
 export default function Layout() {
   return (
-    <div className="flex min-h-screen flex-col bg-bg-main text-text-dark font-sans antialiased selection:bg-primary-light selection:text-primary-dark">
+    <div className="flex min-h-screen flex-col bg-[#EFE5D8] text-text-dark font-sans antialiased selection:bg-primary-light selection:text-primary-dark relative">
       <Header />
-      <main className="flex-1">
+      <main className="relative z-10 flex-1">
         <Outlet />
       </main>
       <Footer />
     </div>
+
+
   )
 }
+
