@@ -17,6 +17,7 @@ export default function Header() {
         { name: 'Home', path: '/' },
         { name: 'About', path: '/about' },
         { name: 'Services', path: '/services' },
+        { name: 'EMDR Therapy', path: '/emdr-therapy' },
         { name: 'Contact', path: '/contact' },
     ]
 
@@ -44,7 +45,7 @@ export default function Header() {
                             key={item.path}
                             to={item.path}
                             className={({ isActive }) =>
-                                `px-5 py-2 rounded-full text-sm font-medium transition-all duration-200 ${isActive
+                                `px-3.5 lg:px-5 py-2 rounded-full text-sm font-medium transition-all duration-200 whitespace-nowrap ${isActive
                                     ? 'bg-primary/20 text-primary-dark font-semibold shadow-inner'
                                     : 'text-muted-text hover:text-text-dark hover:bg-white/60'
                                 }`

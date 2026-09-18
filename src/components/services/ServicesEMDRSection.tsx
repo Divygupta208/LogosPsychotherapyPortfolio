@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { FiArrowRight, FiShield, FiHeart, FiFeather, FiUsers, FiInfo } from 'react-icons/fi'
-import sandBg from '../../../public/images/sandbg.png'
+import emdrHeroImg from '../../../public/images/emdrhero.jpg'
 
 export default function ServicesEMDRSection() {
   const emdrSpecialties = [
@@ -33,7 +33,7 @@ export default function ServicesEMDRSection() {
         {/* SERENE BANNER IMAGE */}
         <div className="w-full h-48 sm:h-64 rounded-3xl overflow-hidden shadow-inner relative">
           <img
-            src={sandBg}
+            src={emdrHeroImg}
             alt="EMDR Therapy Serene Banner"
             className="w-full h-full object-cover"
           />
@@ -61,7 +61,7 @@ export default function ServicesEMDRSection() {
           {/* ACTION BUTTONS */}
           <div className="pt-2 flex flex-wrap items-center gap-4">
             <Link
-              to="/services/emdr-therapy"
+              to="/emdr-therapy"
               className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-cta text-white hover:bg-primary-dark font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-sm"
             >
               <FiInfo className="w-4 h-4" />

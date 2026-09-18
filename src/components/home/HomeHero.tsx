@@ -104,7 +104,7 @@ export default function HomeHero() {
                             variants={blurItemVariants}
                             className="text-lg sm:text-xl text-text-dark/90 font-medium max-w-2xl leading-relaxed drop-shadow-[0_1px_8px_rgba(255,255,255,0.85)]"
                         >
-                            Where understanding meets transformation—supportive psychotherapy tailored to help you live more fully and authentically.
+                            Where understanding meets transformation & supportive psychotherapy tailored to help you live more fully and authentically.
                         </motion.p>
 
                         {/* KEY HIGHLIGHT TAGS */}

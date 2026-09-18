@@ -40,7 +40,7 @@ export default function HomeModalitiesSection() {
 
               <div className="pt-2">
                 <Link
-                  to="/services"
+                  to="/emdr-therapy"
                   className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-cta hover:text-primary-dark transition-colors group"
                 >
                   <span className="uppercase tracking-wider">Learn About EMDR Therapy</span>
