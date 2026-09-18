@@ -1,4 +1,4 @@
-import { FiCheckCircle, FiCpu, FiEye, FiShield } from 'react-icons/fi'
+import {  FiCpu, FiEye, FiShield } from 'react-icons/fi'
 import { RiBrainLine, RiSparkling2Line } from 'react-icons/ri'
 import service1 from '../../../public/images/service-1.avif'
 
