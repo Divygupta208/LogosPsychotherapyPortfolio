@@ -2,7 +2,7 @@ import service1 from '../../public/images/service-1.avif'
 import service2 from '../../public/images/service-2.avif'
 import service3 from '../../public/images/service-3.avif'
 import service4 from '../../public/images/service-4.avif'
-import sandBg from '../../public/images/sandbg.png'
+import emdrHeroImg from '../../public/images/emdrhero.jpg'
 
 export interface ServiceItem {
   id: string
@@ -141,6 +141,6 @@ export const servicesData: ServiceItem[] = [
       'Anyone experiencing PTSD, trauma, severe phobias, panic, performance anxiety, or deeply rooted negative self-beliefs resulting from past events.',
     approach:
       'Standard 8-Phase EMDR Protocol delivered online using specialized secure bilateral stimulation tools.',
-    image: sandBg,
+    image: emdrHeroImg,
   },
 ]

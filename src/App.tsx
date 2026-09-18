@@ -6,6 +6,7 @@ import About from './pages/About'
 import Services from './pages/Services'
 import ServiceDetails from './pages/ServiceDetails'
 import Contact from './pages/Contact'
+import EMDRTherapy from './pages/EMDRTherapy'
 
 // ScrollToTop component on route changes
 function ScrollToTop() {
@@ -28,6 +29,8 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="services" element={<Services />} />
           <Route path="services/:serviceId" element={<ServiceDetails />} />
+          <Route path="emdr-therapy" element={<EMDRTherapy />} />
+          <Route path="emdr" element={<EMDRTherapy />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<Home />} />
         </Route>

@@ -94,13 +94,13 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/contact" className="hover:text-[#041220] hover:translate-x-1 inline-block transition-all">
-                                    How It Works
+                                <Link to="/emdr-therapy" className="hover:text-[#041220] hover:translate-x-1 inline-block transition-all">
+                                    EMDR Therapy
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/about" className="hover:text-[#041220] hover:translate-x-1 inline-block transition-all">
-                                    Our Story
+                                <Link to="/contact" className="hover:text-[#041220] hover:translate-x-1 inline-block transition-all">
+                                    How It Works
                                 </Link>
                             </li>
                         </ul>
